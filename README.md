@@ -80,7 +80,7 @@ This project uses 3 pretrained models:
 There is a total of 8 required weight files with the respective metadata file required. Each model had been quantized to a size less than 10 MB to improve the recognition speed.
 
 <p align="center">
-    <kbd><img src="README_Assets/Models/models.png" height='400' width='200'></kbd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+    <kbd><img src="README_Assets/Models/models.png"></kbd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
 </p>
 
 ## Support and Contact
