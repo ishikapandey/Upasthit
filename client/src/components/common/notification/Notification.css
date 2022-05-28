@@ -1,0 +1,48 @@
+.notification{
+    background-color: #eef !important;
+    color: rgb(0, 126, 199) !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+}
+
+.notification:hover, .unchecked_notification:hover{
+    background-color: rgb(235, 235, 235) !important;
+    color: grey !important;
+}
+
+.notification:hover, .unchecked_notification:hover .notification__title{
+    color: grey !important;
+}
+
+.notification .notification__title{
+    color: rgb(6, 86, 161) !important;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.unchecked_notification{
+    background-color: rgb(170, 219, 246) !important;
+    color: rgb(59, 147, 215) !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+}
+
+.unchecked_notification .notification__title{
+    color: rgb(94, 153, 230) !important;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+
+.notification__seen, .notification__createdAt{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.notification .notification__createdAt{
+    color: grey;
+}
+

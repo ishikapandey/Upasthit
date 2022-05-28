@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@media only screen and (max-width: 400px) {
+    .headerNavbar .avatar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .headerNavbar__text{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .headerNavbar__text{
+        display: block;
+    }
+}
+
+
+
+.headerNavbar__text{
+    float: left;
+}
+.headerNavbar__text__item:first-child{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+.headerNavbar__text__item:nth-child(2){
+    font-weight: bold;
+    color: #fff;
+    margin-right: 5px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+.headerNavbar__menu{
+    float: right;
+}
+
+.headerNavbar .avatar{
+    top: 10px;
+    float: left;
+    margin-right: 10px;
+}
