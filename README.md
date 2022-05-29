@@ -3,12 +3,12 @@ An attendance tracking system that uses face recognition
 
 Visit the web application: [Upasthit](https://ishika-engage.netlify.app/)
 
-Video Demo: [Link]()
 
 ## Table of contents
 - [Technology Stack](#technology-stack)
 - [Features of the Application](#features-of-the-application)
 - [Face API Implementation](#face-api-implementation) 
+- [Installation](#installation)
 - [Support and Contact](#support-and-contact)
 
 
@@ -77,12 +77,92 @@ This project uses 3 pretrained models:
 - Facial Landmark Detection Model
 - Feature Extraction Model
 
+[Source Link ](https://github.com/justadudewhohacks/face-api.js/tree/master/weights)
+
 There is a total of 8 required weight files with the respective metadata file required. Each model had been quantized to a size less than 10 MB to improve the recognition speed.
 
 <p align="center">
-    <kbd><img src="README_Assets/Models/models.png"></kbd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+    <kbd><img src="README_Assets/Models/models.png"></kbd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
+
+
+[(Back to top)](#table-of-contents)
+
+## Installation
+To install and run the project on your local system, following are the requirements:
+
+### Prerequisites
+- You will need a dependency managers such as npm, yarn, brew, etc.
+- Download and install NodeJS if you do not have it already: https://nodejs.org/en/download/
+- In CMD type "node --version" to check NodeJS have been installed.
+- In CMD type "npm --version" to check Node Package Manager (NPM) also have been installed.
+
+### Setting up the project
+
+#### Step 1: Clone this repository.
+Initialise git on your terminal.
+
+```bash
+git init
+git clone https://github.com/ishikapandey/Upasthit.git
+```
+
+#### Step 2: Install the dependencies
+
+- Open project in Visual Studio Code or any IDE.
+- Open CMD in VSCode, change directory to "client" folder and install the dependency 
+```bash
+cd client && npm i
+```
+- Open another terminal, change directory to "server" folder and install the dependency
+```bash
+cd server && npm i
+```
+
+#### Step 3: Create an account in MongoDB Cloud and configure
+
+- Create a project named "Upasthit" and create a cluster named "Upasthit-Cluster".
+- Adding IP whitelist "0.0.0.0" to allow all network access.
+
+#### Step 4: Create an account in Cloudinary media storage and configure
+
+- In tab "Media Library", create folder named "Upasthit".
+- Inside folder "Upasthit", create another two folders named "ProfilePicture" and "FaceGallery".
+- Click Setting icon on top right.
+- Under tab "Upload", scroll down until you see "Upload presets".
+- Click "Add upload preset", set Upload preset name to "upasthit_facegallery" and folder set to "Upasthit/FaceGallery".
+- Leave the others as default and click "Save".
+- Again, click "Add upload preset", set Upload preset name to "upasthit_profilepicture" and folder set to "Upasthit/ProfilePicture".
+- Leave the others as default and click "Save".
+
+#### Step 5: Create Google OAuth Credential to enable google login and sending email
+
+- Go to GCP console: https://console.cloud.google.com/apis.
+- Create an OAuth credential for google login.
+- Under tab "Credentials", click "Create Credential" and choose "OAuth client ID".
+- Choose the application type "Web Application".
+- Name the OAuth client name "Google Login".
+- Add the javascript origin: http://localhost:3000, https://ishika-engage.netlify.app
+- Add the redirect uri: https://developers.google.com/oauthplayground.
+- Click "Save".
+- Create an OAuth credential for email sending.
+- Under tab "Credentials", click "Create Credential" and choose "OAuth client ID".
+- Choose the application type "Web Application".
+- Name the OAuth client name "Mail".
+- Add the javascript origin: http://localhost:4000, https://ishika-engage.netlify.app
+- Add the redirect uri: https://developers.google.com/oauthplayground.
+- Click "Save".
+- Under tab "OAuth Consent Screen", enter the required info (app name, app logo, app uri, privacy policy, etc).
+
+#### Step 6: Configure server environment variables.
+
+- Inside the "server" folder, create a file named ".env" used to save the credential data of database, API and so on.
+- Inside ".env" file, create 10 variables named "MONGO_URI", "SECRET_KEY", "CLOUDINARY_NAME", "CLOUDINARY_API_KEY", "CLOUDINARY_API_SECRET", "GOOGLE_OAUTH_USERNAME", "GOOGLE_OAUTH_CLIENT_ID", "GOOGLE_OAUTH_CLIENT_SECRET", "GOOGLE_OAUTH_REFRESH_TOKEN" and "GOOGLE_OAUTH_REDIRECT_URI".
+- Assign values to these variables from the accounts created above.
+
+[(Back to top)](#table-of-contents)
 
 ## Support and Contact
 Email To: ishikapandey070@gmail.com
-<br/>[(Back to top)](#table-of-contents)
+<br/>
+[(Back to top)](#table-of-contents)
