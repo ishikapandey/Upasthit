@@ -1,7 +1,7 @@
 # Upasthit
 An attendance tracking system that uses face recognition
 
-Visit the web application: [Upasthit](https://ishika-engage.netlify.app/)
+[Visit the web application](https://ishika-engage.netlify.app/)
 
 
 ## Table of contents
