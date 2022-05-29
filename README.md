@@ -53,11 +53,18 @@ An attendance tracking system that uses face recognition
 ### <img src="https://img.icons8.com/color/2x/attendance-mark.png" style="float: left" width="30px" />&ensp;Attendance History
 - Percentage and names of absentees can be seen by both the users.
 
+### <img src="https://img.icons8.com/ios-glyphs/2x/clock--v2.gif" style="float: left" width="30px" />&ensp;Schedule Attendance Transaction
+- Lecturers can schedule to inititiate an attendance transaction at a particular time and date.
+
 ### <img src="https://img.icons8.com/ios/2x/delete-sign--v3.gif" style="float: left" width="30px" />&ensp;Remove student from a course
 - The lecturer can remove students from a course.
 
+
+### <img src="https://img.icons8.com/color/2x/circled-user-male-skin-type-4--v2.gif" style="float: left" width="30px" />&ensp;Profile Picture
+- Users can change their profile picture.
+
 ### <img src="https://img.icons8.com/ios-filled/2x/appointment-reminders--v2.gif" style="float: left" width="30px" />&ensp;Notification
-- Students enroled in a course get notified when the attendance sheet is opened.
+- Students enrolled in a course get notified when the attendance sheet is opened.
 
 [(Back to top)](#table-of-contents)
 
