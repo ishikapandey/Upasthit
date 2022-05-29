@@ -64,6 +64,10 @@ An attendance tracking system that uses face recognition
 
 ## Face API Implementation
 
+This web application uses <b>face-api.js</b>
+
+Face-api.js is a JavaScript API for face detection and face recognition in the browser implemented on top of the tensorflow.js core API. It implements a series of convolutional neural networks (CNNs), optimized for the web and for mobile devices.
+
 ### Processes involved in Face Recognition
 - Face registration: It is a process to store the features of a face into the file system or database.
 - Face matching: It is a process to match the face between the detected features with the other existing features in our dataset either using a classifier or distance metric algorithm.
